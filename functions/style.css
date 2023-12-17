@@ -1,0 +1,135 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #11053b, #3a88fe);
+}
+
+.one-assign {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Lobster;
+}
+
+.top-container {
+  border: 1px solid white;
+  margin: auto;
+  padding: 2rem;
+  max-width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+    font-family: Helvetica, sans-serif;
+    color: floralwhite;
+}
+
+.add7 {
+  background-color: hsla(190, 65%, 70%, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px 0 0 0;
+}
+
+.add-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+input {
+  border: none;
+  border-radius: 10px 0 10px 0;
+  height: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  background-color: #11053b;
+  padding: 4px 1px;
+  color: antiquewhite;
+}
+
+input:focus, input:active {
+    outline: 1px solid rgb(195, 118, 195);
+}
+
+button {
+  width: 6.6rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: 0 0 0.5rem #c4bc00;
+  border-radius: 10px 0 10px 0;
+  margin-left: 0.7rem;
+}
+
+.multiply {
+  background-color: hsla(260, 65%, 60%, 0.8);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0 10px 0 0;
+}
+
+.capitalize {
+  background-color: hsla(190, 85%, 70%, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0 0 10px 0;
+}
+
+.lastLetter {
+  background-color: hsla(260, 65%, 70%, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0 0 0 10px;
+}
+
+#result {
+    font-family: Lobster;
+    margin: auto;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Function Fundamental pt 3</title>
+</head>
+<body>
+    <p class="one-assign">Javascript Fundamental 3: </p>
+    <div class="top-container">
+        <div class="add7">
+            <h1 class="title">Add7 to Any Number</h1>
+            <section class="add-line">
+            <input type="number" id="num1" class="add-num" placeholder="Enter a number">
+            <button
+                onclick="document.getElementById('result').innerHTML = add7(parseInt(document.getElementById('num1').value))">Add
+                7</button>
+            <p id="result"></p>
+            </section>
+        </div>
+        
+        <div class="multiply">
+            <h1 class="title">Multiply Any Number</h1>
+            <section class="multiply-line">
+            <input type="number" id="num2" class="multiply-num" placeholder="Enter a number">
+            <input type="number" id="num3" class="multiply-num" placeholder="Enter a number">
+            <button onclick="document.getElementById('result2').innerHTML = multiply(parseInt(document.getElementById('num2').value), parseInt(document.getElementById('num3').value))">Multiply</button>
+            <p id="result2"></p>
+            </section>
+        </div>
+        
+        <div class="capitalize">
+            <h1 class="title">Capitalize Any Word</h1>
+            <section class="capitalize-line">
+            <input type="text" id="word" class="capitalize-word" placeholder="Enter a word">
+            <button
+                onclick="document.getElementById('result3').innerHTML = capitalize(document.getElementById('word').value)">Capitalize</button>
+            <p id="result3"></p>
+            </section>
+        </div>
+        
+        <div class="lastLetter">
+            <h1 class="title">Last Letter</h1>
+            <section class="last-line">
+            <input type="text" id="word2" class="last-word" placeholder="Enter a word">
+            <button
+                onclick="document.getElementById('result4').innerHTML = lastLetter(document.getElementById('word2').value)">Last</button>
+            <p id="result4"></p>
+            </section>
+        </div>
+    </div>
+    
+      <script src="script.js"></script>
+      <script>
+        function add7(num) {
+          return num + 7;
+        }
+    
+        function multiply(num1, num2) {
+          return num1 * num2;
+        }
+    
+        function capitalize(str) {
+          return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+        }
+    
+        function lastLetter(str) {
+          return str.charAt(str.length - 1);
+        }
+      </script>
+</body>
+</html>
