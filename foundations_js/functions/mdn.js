@@ -17,3 +17,32 @@ function printScreen(text) {
 
 printScreen("hey there");
 // invoking custom function
+
+// ReferenceError
+// reference repeat of top line to make extra spae. maybe i should change my format settings.
+const x = 1;
+
+function a() {
+  const y = 2;
+  output(y);
+}
+
+function b() {
+  const z = 3;
+  output(z);
+}
+
+function output(value) {
+  console.log(value);
+}
+
+output(x);
+// this should output the corresponding value because x is a global scoped variable, unlike the other two, y and z
+
+// output(y);
+// this should lead to a Refernce Error, because the output function can not access the values from inside of its function
+
+a();
+b();
+
+// next, work on Array Function
