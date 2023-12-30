@@ -1,25 +1,62 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --action-color: blueviolet;
+  --plain-border: 1px solid black;
+  --small-font: 0.8em;
+  --medium-font: 1.1em;
+  --large-font: 1.4em;
+  --average: 0.6rem;
 }
 
 html {
-    height: 100svh;
-    padding: 0;
-    margin: 0;
+  height: 100svh;
+  width: 100svw;
+}
+
+.card {
+  width: 250px;
+  height: 400px;
+  display: grid;
+  grid-template-rows: max-content 100px 1fr;
+  margin: auto;
+  border: var(--plain-border);
+
+  .card-photo {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    margin-top: var(--average);
+  }
+
+  .persona {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100%;
+  }
 }
 
 a {
-    border: 1px solid black;
-    background-color: hsla(31, 73%, 90%, 0.5);
-    padding: 2px 5px;
-    font-size: 1.4em;
-    color: rgb(15, 29, 24);
+  border: --plain-border;
+  background-color: hsla(31, 73%, 90%, 0.5);
+  padding: 2px 5px;
+  font-size: var(--large-font);
+  color: rgb(15, 29, 24);
 }
 
 a:hover {
-    display: inline-block;
-    background-color: blueviolet;
-    transform: scaleX(1.1);
-    margin-left: 10px;
+  display: inline-block;
+  background-color: var(--action-color);
+  transform: scaleX(1.1);
+  margin: var(--average);
+}
+
+.bento {
+    border: var(--plain-border);
+    width: fit-content;
+    padding: var(--average) 100px;
 }
