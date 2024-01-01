@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Odin Projects</title>
+	<script src="https://cdn.tailwindcss.com"></script>
 	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
-  <body>
+  <body class="bg-red-900/[0.1]">
 
 	<!-- profile card start -->
-	<section class="">
+	<section class="bg-red-900/[0.3]">
 		<!-- complete this -->
 		<article class="card">
 			<div class="persona"></div>
@@ -18,12 +19,17 @@
 
 			<img src="https://images.pexels.com/photos/19562915/pexels-photo-19562915/free-photo-of-a-swan-is-swimming-in-the-water-near-a-lake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-photo" alt="Swan in lake with male duck with a mountain scene in background">
 		</article>
+
+		<p>Projects and work from the Odin Project</p>
 	</section>
 	<!-- profile card end -->
 
 	<section>
-		<a href="./landing_page/index.html">Landing Page</a>
-		<a href="./functions/index.html">JS Fundamentals Part 3</a>
+		<article class="flex">
+			<a href="./landing_page/index.html"  class="transition duration-700 bg-red-900/[0.7] hover:cursor-pointer hover:underline">Landing Page</a>
+			<a href="./functions/index.html"  class="transition duration-700 bg-indigo-900/[0.7] hover:cursor-pointer hover:underline">JS Fundamentals Part 3</a>
+			<a href="./paper_scissors_rock/index.html"  class="transition duration-700 bg-yellow-900/[0.7] hover:cursor-pointer hover:underline">Paper, Scissors, Rock</a>
+		</article>
 		<!-- wrap this section below for a bento, card design -->
 		<article class="bento">
 			<h2>Problem Solving</h2>

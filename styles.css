@@ -42,10 +42,8 @@ html {
 
 a {
   border: --plain-border;
-  background-color: hsla(31, 73%, 90%, 0.5);
   padding: 2px 5px;
   font-size: var(--large-font);
-  color: rgb(15, 29, 24);
 }
 
 a:hover {
