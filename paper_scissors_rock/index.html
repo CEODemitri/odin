@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper, Scissors, Rock</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper, Sciccors, Rock</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" type="module" defer></script>
 </head>
+
 <body>
-    <h1>Paper, Scissors, Rock</h1>
+  <div class="container">
+    <div class="title">
+      <h1>Paper, Scissors, Rock</h1>
+      <p>A Classic Game, Best of <span>5</span> versus Loki!</p>
+    </div>
+
+    <div class="score">
+      <div>
+        <h2>Player</h2>
+        <p id="player-score">0</p>
+      </div>
+      <div>
+        <h2>Loki</h2>
+        <p id="loki-score">0</p>
+      </div>
+    </div>
+
+    <!-- take user input as a choice -->
+    <label for="user-choice">Make A Choice</label>
+    <input id="user-choice" name="user-choice" type="text" class="text" />
+    <button>Submit</button>
+
+    <!-- show loki's choice and result of game -->
+    <div>
+      <section>
+        <h2>Player's Choice</h2>
+        <p id="player-choice"></p>
+      </section>
+
+      <section>
+        <h2>Loki's Choice</h2>
+        <p id="loki-choice"></p>
+      </section>
+
+      <section>
+        <h2>Result</h2>
+        <p id="result"></p>
+      </section>
+    </div>
+
+    <!-- reset game -->
+    <button>Reset</button>
 </body>
+
 </html>
