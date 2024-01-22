@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Paper, Scissors, Rock V2</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+</head>
+
+<!-- this max width is useless with html on 100%: FIX! -->
+<body class="max-w-[750px] p-3">
+  <h1 class="text-5xl text-center">
+    Paper, Scissors, Rock
+  </h1>
+  <p class="text-center text-xl mt-4">5 Rounds vs Loki, the Trickster God</p>
+
+  <h2 class="mt-10">Choose One:</h2>
+
+  <div class="flex flex-col gap-8 items-center">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-48" id="paper">Paper</button>
+
+    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded w-48"
+      id="scissors">Scissors</button>
+
+    <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded w-48 active:animate-bounce"
+      id="rock">Rock</button>
+  </div>
+
+  <div id="play-arena" class="border rounded-tl-2xl max-w-[750px] h-48 mx-5 mt-10 m-auto">
+
+  </div>
+
+
+  <div class="absolute bottom-0 right-0 border py-5 px-3">
+    <h3 class="title text-2xl">Score</h3>
+    <p>
+      Game: <span id="round">0</span>
+    </p>
+
+    <section>
+      <h4>
+        Player Score: <span id="player-score">0</span>
+      </h4>
+      <h4>
+        Loki Score: <span id="loki-score">0</span>
+      </h4>
+
+    </section>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
