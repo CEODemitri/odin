@@ -44,7 +44,7 @@ const resizeButton = document.createElement("button");
 resizeButton.textContent = "Resize";
 resizeButton.setAttribute(
   "style",
-  "height: 2.7rem; width: 6rem; font-size: 2rem; background-color: gold; color: white; border-radius: 50%; margin-left: 0.5rem; border: none; padding: 3px;"
+  "height: 2.7rem; width: 6rem; font-size: 2rem; background-color: gold; color: white; border-radius: 20%; margin-left: 0.5rem; border: none; padding: 3px;"
 );
 resizeButton.addEventListener("click", function () {
   // remove all squares from the grid
