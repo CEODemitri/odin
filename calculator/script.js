@@ -1,37 +1,25 @@
-function addNumbers(a, b) {
-  return a + b;
+function add(a, b) {
+  let addAnswer = a + b;
+  return addAnswer;
 }
 
-function subtractNumbers(a, b) {
-  return a + b;
+function subtract(a, b) {
+  let subtractAnswer = b - a;
+  return subtractAnswer;
 }
 
-function multiplyNumbers(a, b) {
-  return a * b;
+function multiply(a, b) {
+  let multiplyAnswer = a * b;
+  return multiplyAnswer;
 }
 
-function divideNumbers(a, b) {
-  return a / b;
+function divide(a, b) {
+  let divideAnswer = b/a;
+  return divideAnswer;
 }
 
-// T E S T
-console.log(multiplyNumbers(5, 4));
 
-let number;
-let operator;
-let anotherNumber;
-
-function operate(operator, number, anotherNumber) {}
-
-const display = document.getElementById("display");
-
-const allClear = document.getElementById("oneOne");
-allClear.addEventListener("click", (event) => {});
-
-const twoOne = document.getElementById("twoOne");
-
-// T E S T . Works fine
-// twoOne.addEventListener("click", (event) => {
-//   console.log("7");
-//   document.getElementById("display").textContent = 7;
-// });
+console.log(add(2, 5))
+console.log(subtract(3, 10))
+console.log(multiply(5, 5))
+console.log(divide(3, 44))
